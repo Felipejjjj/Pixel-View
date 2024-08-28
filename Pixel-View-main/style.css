@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #2D2D2D;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* ----header---- */
+header {
+  background-color:black;
+  color: white;
+  display: flex; 
+  align-items: center;
+  height: 120px;
+  margin-bottom: 0px;
+}
+
+.header-logo {
+  padding-left: 70px;
+  font-family: "Sarpanch";
+  font-size: 45px;
+}
+
+.header-link {
+  font-family: "Roboto";
+  font-size: 25px;
+  margin-left: auto;
+}
+
+.header-link2 {
+  font-family: "Roboto";
+  font-size: 25px;
+  margin-left: 40px;
+  margin-right: 15px; 
+}
+
+.header-link:hover{
+  color: black;
+  background-color: white;
+}
+
+.header-link2:hover {
+  color: black;
+  background-color: white;
+}
+
+/* ----main---- */
+main {
+  margin-top: 0px;
+}
+
+/* capa */
+#capa {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  /* grid-template-columns: 800px 800px; */
+  /* grid-auto-rows: 150px 150px 150px; */
+  background: linear-gradient(180deg, rgba(2,0,32,1) 0%, rgba(0,22,52,1) 48%, rgba(0,19,62,1) 64%, rgba(0,14,122,1) 81%, rgba(12,0,168,1) 92%);
+  height: 880px; 
+  width: auto;
+  color: white; 
+}
+
+#capa {
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#capa-logo, #capa-text {
+  font-family: "Sarpanch";
+  margin-left: 180px;
+}
+
+#capa-logo {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 100px;
+  align-items: end;
+}
+
+#capa-text {
+  grid-row: 2/2;
+  grid-column: 1/2;
+  font-size: 40px;
+  align-items: start; 
+  
+}
+
+#capa-img {
+  grid-row: 1/3;  
+  /* grid-column: 1/4; */
+  margin-left: auto; 
+  margin-right: 100px;
+  height: 400px;
+  width: 400px;
+}
+
+/* reviews  */
+#reviews {
+  /* border: solid red;   */
+  margin: 0 auto;
+  width: auto;  
+  height: 1200px;
+}
+
+#reviews h1 {
+  margin-top: 10px;
+}
+
+#reviews-container {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-rows: repeat(4, 250px);
+  grid-template-columns: 500px repeat(3, 260px);
+  gap: 5px 5px;  
+  background-position: center;
+
+}
+
+#R1 {grid-row: 1/4; background-image: url('imagens/RD2.png'); background-size: contain; background-repeat: no-repeat; background-position: center;}
+#R2 { background-image: url('imagens/EldenRing.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R3 { background-image: url('imagens/HollowKnight.png'); background-size: contain; background-repeat: no-repeat; background-position: center;  }
+#R4 { background-image: url('imagens/Terraria.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R5 { background-image: url('imagens/GTACINCO.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R6 { background-image: url('imagens/MetroidFusion.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R7 { background-image: url('imagens/Castlevania.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R8 { background-image: url('imagens/SpiderMan2.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R9 { background-image: url('imagens/Blasphemous.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R10 { background-image: url('imagens/StreetFighter.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+
+
+#reviews div {
+  /* background-color: navy;  */
+}
+
+#reviews h1 {
+  margin-top: 10px;
+  font-family: "Sarpanch";
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+/* notícias e populares  */
+
+#populares {
+  color: white;
+  font-family: "Sarpanch";
+  margin: 0 auto; 
+  /* margin-left: 100px;  */
+  /* border: solid red;     */
+  width: auto; 
+}
+
+#populares h1 {
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+#popular-container{
+  width: 900px;
+  display: flex; 
+  /* flex-wrap: wrap;  */
+  margin: 0 auto;
+  gap: 100px;
+  justify-content: center;
+}
+
+#popular-container article {
+  margin: 0 auto;
+}
+
+.popular-image {
+  margin: 0 auto;
+  height: 350px;
+  width: 350px;
+  /* background-color: #02cf8b;  */
+}
+
+.popular-title, .popular-subtitle {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.popular-subtitle {  
+  color: #8f8f8f;
+  width: 360px;  
+}
+
+.popular-button-container {
+  text-align: center;
+}
+.popular-button {
+  font-family: "Sarpanch";
+  font-size: 30px;
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: #A136FF;
+  text-decoration: none;
+}
+
+#populares div {
+  background-size: cover;  
+}
+
+#sonic { background-image: url('imagens/Sonic-x-shadow.jpg'); }
+#mortal { background-image: url('imagens/Mortal-Kombat-X.jpg'); }
+#GTAV { background-image: url('imagens/GTAV.png'); }
+#Overwatch { background-image: url('imagens/Overwatch.png'); }
+#Valorant { background-image: url('imagens/Valorant.png'); }
+
+
+/* localização  */
+#maps {
+  color: white;
+  font-family: "Sarpanch";
+  margin-left: 100px;
+  /* border: solid red;     */
+  width: auto; 
+}
+
+#maps h1 {
+  font-size: 60px;
+}
+
+#maps article {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----footer---- */
+footer {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+#footer-logo, #footer-text, .footer-icons {
+  margin: 0 auto;
+}
+
+#footer-logo {
+  font-family: "Sarpanch";
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+#footer-text{
+  font-family: "Roboto";
+  font-size: 20px;
+}
+
+i {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#footer-section p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-family: "Roboto";
+  text-align: center;
+  background-color: #0c00a8;
+  color: white;
+}
+
+/* ----responsividade----  */
+
+@media (max-width: 1345px) {
+
+  #capa-img {
+    display: none; 
+  }
+
+  #popular-container {
+    width: 900px;
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  #reviews-container {
+    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: 500px repeat(3, 150px);
+  }
+}
+
+@media (max-width: 1000px) {
+  #reviews-container {
+     grid-template-rows: repeat(4, 100px);
+      grid-template-columns: 500px repeat(3, 100px);
+  }
+  
+}
+
+@media (max-width: 900px) {
+  #populares {
+    color: white;
+    font-family: "Sarpanch";
+    margin: 0 auto; 
+    width: auto; 
+  }
+
+  #populares h1 {
+    margin-top: 50px;
+    font-size: 60px;
+  }
+
+  #popular-container{
+    width: 900px;
+    display: flex; 
+    /* flex-wrap: wrap;  */
+    margin: 0 auto;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  #popular-container article {
+    margin: 0 auto;
+  }
+
+  .popular-image {
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    /* background-color: #02cf8b;  */
+  }
+
+  .popular-title, .popular-subtitle {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .popular-subtitle {  
+    color: #8f8f8f;
+    width: 360px;  
+  }
+
+  .popular-button-container {
+    text-align: center;
+  }
+  .popular-button {
+    font-family: "Sarpanch";
+    font-size: 30px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    background-color: #A136FF;
+  }
+
+  .header-logo {
+    padding-left: 70px;
+    font-family: "Sarpanch";
+    font-size: 25px;
+  }
+
+  .header-link {
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-left: auto;
+  }
+
+  .header-link2 {
+    font-family: "Roboto";
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 15px; 
+  }
+
+}
+
+
+
+@media (max-width: 375px) {
+
+
+}
