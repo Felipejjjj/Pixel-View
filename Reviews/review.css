@@ -294,95 +294,171 @@ i {
 }
 
 /* ----responsividade----  */
-/* 
-@media (max-width: 1345px) {
-
-  #capa-img {
-    display: none; 
-  }
-
-  #popular-container {
-    width: 900px;
-    display: flex; 
-    flex-wrap: wrap; 
-    margin: 0 auto;
-    gap: 100px;
-    justify-content: center;
-  }
-
-  #reviews-container {
-    grid-template-rows: repeat(4, 150px);
-    grid-template-columns: 500px repeat(3, 150px);
-  }
-}
-
 @media (max-width: 1000px) {
-  #reviews-container {
-     grid-template-rows: repeat(4, 100px);
-      grid-template-columns: 500px repeat(3, 100px);
+	#reviews {
+	  height: auto;
+	}
+	#reviews-container {
+	  display: flex;
+	  flex-direction: row;
+	  text-align: center;
+	  flex-wrap: wrap;
+	}
+  
+	#reviews-container div {
+	  height: 100px;
+	}
+	#populares {
+	  margin-top: 10px;
+	}
   }
-
-}
-
+  
 @media (max-width: 900px) {
-  #populares {
-    color: white;
-    font-family: "Sarpanch";
-    margin: 0 auto; 
-    width: auto; 
+	/* Ajuste para o cabeçalho */
+	header {
+	  flex-direction: column;
+	  align-items: center;
+	  height: auto;
+	  padding: 10px;
+	}
+	.header-logo {
+	  font-size: 35px;
+	  padding-left: 0;
+	}
+	.header-link, .header-link2 {
+	  font-size: 20px;
+	  margin: 5px 0;
+	}
+	/* Ajuste para a capa */
+	#capa {
+	  height: auto;
+	  padding: 20px;
+	  text-align: center;
+	}
+	#capa-logo {
+	  font-size: 80px;
+	  margin-left: 0;
+	}
+	#capa-text {
+	  font-size: 30px;
+	  margin-left: 0;
+	}
+	#capa-img {
+	  width: 300px;
+	  height: 300px;
+	  margin: 20px auto;
+	}
+	/* Ajuste para a seção de reviews */
+	#reviews {
+	  height: auto;
+	  padding: 20px;
+	}
+	#reviews-container {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr;
+	  grid-template-rows: auto;
+	  gap: 10px;
+	  width: 100%;
+	}
+	/* Ajuste para notícias e populares */
+	#popular-container {
+	  flex-direction: column;
+	  gap: 20px;
+	  width: 100%;
+	}
+	.popular-image {
+	  width: 100%;
+	  height: auto;
+	}
+	.popular-title, .popular-subtitle {
+	  width: 100%;
+	}
+	.popular-button {
+	  width: 100%;
+	}
+	/* Ajuste para o mapa */
+	#maps article iframe {
+	  width: 100%;
+	  height: auto;
+	}
+	/* Ajuste para o footer */
+	footer {
+	  align-items: center;
+	  text-align: center;
+	}
+	#footer-logo {
+	  font-size: 60px;
+	}
+	#footer-text {
+	  font-size: 18px;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	  align-items: flex-start;
+	}
+	.header-link, .header-link2 {
+	  margin: 5px 0;
+	}
+	#capa {
+	  height: auto;
+	  padding: 20px;
+	}
+	#capa-logo {
+	  font-size: 2em;
+	}
   }
 
-  #populares h1 {
-    margin-top: 50px;
-    font-size: 60px;
+  @media print {
+	header, footer, #capa, #maps, .header-link, .header-link2, .popular-button-container {
+	  display: none;
+	}
+  
+	main {
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	}
+  
+	body {
+	  background-color: white;
+	  color: black;
+	  font-family: Arial, sans-serif; 
+	  font-size: 12pt;
+	}
+  
+	a {
+	  text-decoration: underline;
+	  color: blue;
+	}
+  
+	img, .popular-image, #capa-img {
+	  max-width: 100%;
+	  height: auto;
+	}
+  
+
+	#reviews-container, #popular-container {
+	  grid-template-columns: 1fr; 
+	  gap: 10px; 
+	}
+  
+	#reviews h1, #populares h1 {
+	  font-size: 24px;
+	  text-align: center;
+	  margin: 10px 0;
+	}
+  
+	.popular-title, .popular-subtitle {
+	  color: black;
+	  text-align: left;
+	  width: 100%;
+	  margin: 0 0 10px 0;
+	}
+
+	.topic h2, p{
+		color: black;
+	}
   }
-
-  #popular-container{
-    width: 900px;
-    display: flex; 
-    /* flex-wrap: wrap;  */
-/* margin: 0 auto;
-    gap: 100px;
-    justify-content: center;
-  }
-
-  #popular-container article {
-    margin: 0 auto;
-  }
-
-  .popular-image {
-    margin: 0 auto;
-    height: 350px;
-    width: 350px;
-    /* background-color: #02cf8b;  */
-/* }
-
-  .popular-title, .popular-subtitle {
-    margin: 20px auto;
-    text-align: center;
-  }
-
-  .popular-subtitle {  
-    color: #8f8f8f;
-    width: 360px;  
-  }
-
-  .popular-button-container {
-    text-align: center;
-  }
-  .popular-button {
-    font-family: "Sarpanch";
-    font-size: 30px;
-    height: 50px;
-    width: 200px;
-    color: white;
-    background-color: #A136FF;
-  }
-}
-
-
-
-@media (max-width: 375px) {
-
-
-} */

@@ -33,6 +33,8 @@ header {
   font-family: "Roboto";
   font-size: 25px;
   margin-left: auto;
+  text-decoration: none;
+  color: white;
 }
 
 .header-link2 {
@@ -40,6 +42,8 @@ header {
   font-size: 25px;
   margin-left: 40px;
   margin-right: 15px; 
+  text-decoration: none;
+  color: white;
 }
 
 .header-link:hover{
@@ -126,8 +130,19 @@ main {
   grid-template-columns: 500px repeat(3, 260px);
   gap: 5px 5px;  
   background-position: center;
-
 }
+
+#reviews-container a {
+  font-family: "Sarpanch";
+  color: white;
+  text-decoration: none;
+}
+
+#reviews-container a:hover {
+  color: black;
+  background-color: white;
+}
+
 
 #R1 {grid-row: 1/4; background-image: url('imagens/RD2.png'); background-size: contain; background-repeat: no-repeat; background-position: center;}
 #R2 { background-image: url('imagens/EldenRing.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
@@ -316,92 +331,118 @@ i {
 }
 
 @media (max-width: 1000px) {
-  #reviews-container {
-     grid-template-rows: repeat(4, 100px);
-      grid-template-columns: 500px repeat(3, 100px);
+  #reviews {
+    height: auto;
   }
-  
+  #reviews-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  #reviews-container div {
+    height: 100px;
+  }
+  #populares {
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 900px) {
-  #populares {
-    color: white;
-    font-family: "Sarpanch";
-    margin: 0 auto; 
-    width: auto; 
+  /* Ajuste para o cabeçalho */
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
   }
-
-  #populares h1 {
-    margin-top: 50px;
-    font-size: 60px;
+  .header-logo {
+    font-size: 35px;
+    padding-left: 0;
   }
-
-  #popular-container{
-    width: 900px;
-    display: flex; 
-    /* flex-wrap: wrap;  */
-    margin: 0 auto;
-    gap: 100px;
-    justify-content: center;
+  .header-link, .header-link2 {
+    font-size: 20px;
+    margin: 5px 0;
   }
-
-  #popular-container article {
-    margin: 0 auto;
+  /* Ajuste para a capa */
+  #capa {
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
-
-  .popular-image {
-    margin: 0 auto;
-    height: 350px;
-    width: 350px;
-    /* background-color: #02cf8b;  */
+  #capa-logo {
+    font-size: 80px;
+    margin-left: 0;
   }
-
-  .popular-title, .popular-subtitle {
+  #capa-text {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  #capa-img {
+    width: 300px;
+    height: 300px;
     margin: 20px auto;
-    text-align: center;
   }
-
-  .popular-subtitle {  
-    color: #8f8f8f;
-    width: 360px;  
+  /* Ajuste para a seção de reviews */
+  #reviews {
+    height: auto;
+    padding: 20px;
   }
-
-  .popular-button-container {
-    text-align: center;
+  #reviews-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    width: 100%;
+  }
+  /* Ajuste para notícias e populares */
+  #popular-container {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .popular-image {
+    width: 100%;
+    height: auto;
+  }
+  .popular-title, .popular-subtitle {
+    width: 100%;
   }
   .popular-button {
-    font-family: "Sarpanch";
-    font-size: 30px;
-    height: 50px;
-    width: 200px;
-    color: white;
-    background-color: #A136FF;
+    width: 100%;
   }
-
-  .header-logo {
-    padding-left: 70px;
-    font-family: "Sarpanch";
-    font-size: 25px;
+  /* Ajuste para o mapa */
+  #maps article iframe {
+    width: 100%;
+    height: auto;
   }
-
-  .header-link {
-    font-family: "Roboto";
-    font-size: 15px;
-    margin-left: auto;
+  /* Ajuste para o footer */
+  footer {
+    align-items: center;
+    text-align: center;
   }
-
-  .header-link2 {
-    font-family: "Roboto";
-    font-size: 15px;
-    margin-left: 40px;
-    margin-right: 15px; 
+  #footer-logo {
+    font-size: 60px;
   }
-
+  #footer-text {
+    font-size: 18px;
+  }
 }
 
-
-
-@media (max-width: 375px) {
-
-
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-link, .header-link2 {
+    margin: 5px 0;
+  }
+  #capa {
+    height: auto;
+    padding: 20px;
+  }
+  #capa-logo {
+    font-size: 2em;
+  }
 }
