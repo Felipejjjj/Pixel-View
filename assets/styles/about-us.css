@@ -72,69 +72,32 @@ a:visited {
 
 /* ----main---- */
 main {
+    min-height: 100vh;
 	margin-top: 0px;
 	padding: 0 5%;
 }
 
-/* Review */
-section.info {
-	display: flex;
-	gap: 30px;
-	justify-content: center;
-	margin-top: 50px;
-}
-
-section.info .img {}
-
-section.info .img img {
-	width: 250px;
-}
-
-section.info .details {
-
-}
-
-section.info .details h1 {}
-
-section.info .details ul.stars {
-	display: flex;
-	gap: 20px;
-}
-
-section.info .details ul.stars li {}
-
-section.info .details ul.stars li img {
-	width: 80px;
-}
-
-section.info .description {}
-
-section.info .description h2 {}
-
-section.info .description ul {}
-
-section.info .description ul li {
-	padding: 5px 0 5px 10px ;
-	color: crimson;
-	font-weight: bold;
-
-}
-
-section.topic{
-	margin-top: 50px;
-}
-
-section.topic h2{
-	font-size: 50px;
-	font-family: "Sarpanch";
-
-}
 
 section.autor{
+    margin-top: 5rem;
 	padding: 20px;
 	display: flex;
-
 }
+
+#murilo {
+    border: 5px inset #ff0000;
+    box-shadow: 20px 15px 20px 0px #fc1313;
+}
+
+#felipe {
+    border: solid #00F6FF;
+    box-shadow: 20px 15px 20px 0px #23f6fd;
+}
+
+section.autor ol, li {
+    font-family: "Sarpanch";
+}
+
 section.autor .text h3{
 	font-family: "Sarpanch";
 	font-weight: normal;
@@ -164,85 +127,10 @@ section.autor .img span:nth-child(2){
 	font-weight: bold;
 }
 
-/* notícias e populares  */
-#populares {
-	color: white;
-	font-family: "Sarpanch";
-	margin-left: 100px;
-	/* border: solid red;     */
-	width: auto;
-	
-}
-
-#populares h1 {
-	margin-top: 50px;
-	font-size: 60px;
-}
-
-#popular-container {
-	width: 900px;
-	display: flex;
-	/* flex-wrap: wrap;  */
-	margin: 0 auto;
-	gap: 100px;
-	justify-content: center;
-}
-
-#popular-container article {
-	margin: 0 auto;
-}
-
-.popular-image {
-	margin: 0 auto;
-	height: 350px;
-	width: 350px;
-	/* background-color: #02cf8b;  */
-}
-
-.popular-title,
-.popular-subtitle {
-	margin: 20px auto;
-	text-align: center;
-}
-
-.popular-subtitle {
-	color: #8f8f8f;
-	width: 360px;
-}
-
-.popular-button-container {
-	text-align: center;
-}
-
-.popular-button {
-	font-family: "Sarpanch";
-	font-size: 30px;
-	height: 50px;
-	width: 200px;
-	color: white;
-	background-color: #A136FF;
-	text-decoration: none;
-}
-
-#populares div {
-	background-size: cover;
-}
-
-#GTAV {
-	background-image: url('../imagens/GTAV.png');
-}
-
-#Overwatch {
-	background-image: url('../imagens/Overwatch.png');
-}
-
-#Valorant {
-	background-image: url('../imagens/Valorant.png');
-}
 
 /* ----footer---- */
 footer {
-	margin-top: 80px;
+	margin-top: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;

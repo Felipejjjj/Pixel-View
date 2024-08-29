@@ -144,16 +144,16 @@ main {
 }
 
 
-#R1 {grid-row: 1/4; background-image: url('imagens/RD2.png'); background-size: contain; background-repeat: no-repeat; background-position: center;}
-#R2 { background-image: url('imagens/EldenRing.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R3 { background-image: url('imagens/HollowKnight.png'); background-size: contain; background-repeat: no-repeat; background-position: center;  }
-#R4 { background-image: url('imagens/Terraria.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R5 { background-image: url('imagens/GTACINCO.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R6 { background-image: url('imagens/MetroidFusion.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R7 { background-image: url('imagens/Castlevania.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R8 { background-image: url('imagens/SpiderMan2.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R9 { background-image: url('imagens/Blasphemous.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
-#R10 { background-image: url('imagens/StreetFighter.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R1 {grid-row: 1/4; background-image: url('../images/RD2.png'); background-size: contain; background-repeat: no-repeat; background-position: center;}
+#R2 { background-image: url('../images/EldenRing.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R3 { background-image: url('../images/HollowKnight.png'); background-size: contain; background-repeat: no-repeat; background-position: center;  }
+#R4 { background-image: url('../images/Terraria.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R5 { background-image: url('../images/GTACINCO.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R6 { background-image: url('../images/MetroidFusion.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R7 { background-image: url('../images/Castlevania.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R8 { background-image: url('../images/SpiderMan2.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R9 { background-image: url('../images/Blasphemous.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
+#R10 { background-image: url('../images/StreetFighter.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
 
 
 #reviews div {
@@ -231,11 +231,11 @@ main {
   background-size: cover;  
 }
 
-#sonic { background-image: url('imagens/Sonic-x-shadow.jpg'); }
-#mortal { background-image: url('imagens/Mortal-Kombat-X.jpg'); }
-#GTAV { background-image: url('imagens/GTAV.png'); }
-#Overwatch { background-image: url('imagens/Overwatch.png'); }
-#Valorant { background-image: url('imagens/Valorant.png'); }
+#sonic { background-image: url('../images/Sonic-x-shadow.jpg'); }
+#mortal { background-image: url('../images/Mortal-Kombat-X.jpg'); }
+#GTAV { background-image: url('../images/GTAV.png'); }
+#Overwatch { background-image: url('../images/Overwatch.png'); }
+#Valorant { background-image: url('../images/Valorant.png'); }
 
 
 /* localização  */
