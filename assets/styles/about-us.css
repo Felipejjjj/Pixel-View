@@ -77,6 +77,12 @@ main {
 	padding: 0 5%;
 }
 
+main h1 {
+	font-family: "Sarpanch";
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+}
 
 section.autor{
     margin-top: 5rem;
