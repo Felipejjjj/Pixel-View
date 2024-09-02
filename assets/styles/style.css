@@ -155,11 +155,6 @@ main {
 #R9 { background-image: url('../images/Blasphemous.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
 #R10 { background-image: url('../images/StreetFighter.png'); background-size: contain; background-repeat: no-repeat; background-position: center; }
 
-
-#reviews div {
-  /* background-color: navy;  */
-}
-
 #reviews h1 {
   margin-top: 10px;
   font-family: "Sarpanch";
@@ -350,7 +345,6 @@ i {
 }
 
 @media (max-width: 900px) {
-  /* Ajuste para o cabeçalho */
   header {
     flex-direction: column;
     align-items: center;
@@ -365,7 +359,7 @@ i {
     font-size: 20px;
     margin: 5px 0;
   }
-  /* Ajuste para a capa */
+
   #capa {
     height: auto;
     padding: 20px;
@@ -384,7 +378,7 @@ i {
     height: 300px;
     margin: 20px auto;
   }
-  /* Ajuste para a seção de reviews */
+
   #reviews {
     height: auto;
     padding: 20px;
@@ -396,7 +390,7 @@ i {
     gap: 10px;
     width: 100%;
   }
-  /* Ajuste para notícias e populares */
+
   #popular-container {
     flex-direction: column;
     gap: 20px;
@@ -412,12 +406,12 @@ i {
   .popular-button {
     width: 100%;
   }
-  /* Ajuste para o mapa */
+
   #maps article iframe {
     width: 100%;
     height: auto;
   }
-  /* Ajuste para o footer */
+
   footer {
     align-items: center;
     text-align: center;
