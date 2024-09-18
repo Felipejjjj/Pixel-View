@@ -64,7 +64,8 @@ a:visited {
 
 /* ----main---- */
 main {
-  margin-top: 0px;
+  border-top: auto;
+	padding: 1rem 5%; 
 }
 
 #noticia {
