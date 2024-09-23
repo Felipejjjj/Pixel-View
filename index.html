@@ -5,44 +5,157 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pixel Views</title>
-  <link href="assets/styles\style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/styles\style.css" rel="stylesheet" type="text/css" />  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body data-bs-theme="dark"> 
   <!-- header -->
-  <header>
-    <h2 class='header-logo'>PIXELVIEWS</h2>
-    <a href='#reviews' class='header-link'>Reviews</a>
-    <a href='#populares' class='header-link2'>Notícias</a>
-    <a href='assets\views\about-us.html' class='header-link2'>sobre nós</a>
-		<a href = 'assets\views\login.html' class='header-link2'>login</a>
-  </header>
+  <header style="width: 0; z-index: 99;">
+    <nav class="navbar navbar-expand-lg bg-black fixed-top"> 
+      <div class="container-fluid">
+        <h2 class='header-logo'>PIXELVIEWS</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link" href='#reviews'>Reviews</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#populares">Notícias</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="assets\views\about-us.html">Sobre nós</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="assets\views\login.html">login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+  </header>  
 
   <main>
     <!-- capa do site  -->
     <nav id='capa'>
-      <h1 id='capa-logo'>PIXELVIEWS</h1>
-      <p id='capa-text'>Aqui nós fazemos as melhores <br>reviews de videogames.</p>
-      <img src='assets\images/controle.png' id='capa-img'>
+      <div class="container-fluid text-center" style="padding: 0; margin: 0;"> <!--tem alguma parada no 100vw fazendo a tela esticar um pouco ;-; -->
+        <div class="row" style="flex-wrap: nowrap; height: 100vh; width: 100vw; background: linear-gradient(180deg, rgba(2,0,32,1) 0%, rgba(0,22,52,1) 48%, rgba(0,19,62,1) 64%, rgba(0,14,122,1) 81%, rgba(12,0,168,1) 92%); align-items: center;">
+          <div class="col">
+            <h1 id='capa-logo'>PIXELVIEWS</h1>
+            <p id='capa-text'>Aqui nós fazemos as melhores <br>reviews de videogames.</p>
+          </div>
+          <div class="col">
+            <img src='assets/images/controle.png' id='capa-img'>
+          </div>
+        </div>
+      </div>
     </nav>
 
-    <article id='reviews'>
-      <h1>Reviews</h1>
-      <section id='reviews-container'>
-        <div id='R1'> <a href='assets\views\review-red.html'>Leia a Review</a> </div>
-        <div id='R2'> <a href='assets\views\review-elden.html'>Leia a Review</a> </div>
-        <div id='R3'> <a href='assets\views\review-hollow.html'>Leia a Review</a> </div>
-        <div id='R4'> <a href='assets\views\review-terraria.html'>Leia a Review</a> </div>
-        <div id='R5'> <a href='assets\views\review-GTA.html'>Leia a Review</a> </div>
-        <div id='R6'> <a href='assets\views\review-metroid.Html'>Leia a Review</a> </div>
-        <div id='R7'> <a href='assets\views\review-castelvania.html'>Leia a Review</a> </div>
-        <div id='R8'> <a href='assets\views\review-spider.html'>Leia a Review</a> </div>
-        <div id='R9'> <a href='assets\views\review-blasphemous.html'>Leia a Review</a> </div>
-        <div id='R10'> <a href='assets\views\review-street.Html'>Leia a Review</a> </div>
-      </section>
+    <style>
+      .card-img-top {
+          height: 500px; /* Define a altura desejada */
+          object-fit: cover; /* Faz a imagem se ajustar sem distorcer */
+      }
+  </style>
+
+    <article>
+      <div class="container mt-5">
+        <h1 class="text-center">Reviews</h1>
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/RD2.png" class="card-img-top" alt="Red Game">
+                    <div class="card-body">
+                        <h5 class="card-title">Red</h5>
+                        <a href="assets/views/review-red.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/EldenRing.png" class="card-img-top" alt="Elden Ring">
+                    <div class="card-body">
+                        <h5 class="card-title">Elden Ring</h5>
+                        <a href="assets/views/review-elden.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/HollowKnight.png" class="card-img-top" alt="Hollow Knight">
+                    <div class="card-body">
+                        <h5 class="card-title">Hollow Knight</h5>
+                        <a href="assets/views/review-hollow.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/Terraria.png" class="card-img-top" alt="Terraria">
+                    <div class="card-body">
+                        <h5 class="card-title">Terraria</h5>
+                        <a href="assets/views/review-terraria.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/GTACINCO.png" class="card-img-top" alt="GTA">
+                    <div class="card-body">
+                        <h5 class="card-title">GTA</h5>
+                        <a href="assets/views/review-GTA.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/MetroidFusion.png" class="card-img-top" alt="Metroid">
+                    <div class="card-body">
+                        <h5 class="card-title">Metroid</h5>
+                        <a href="assets/views/review-metroid.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/Castlevania.png" class="card-img-top" alt="Castlevania">
+                    <div class="card-body">
+                        <h5 class="card-title">Castlevania</h5>
+                        <a href="assets/views/review-castelvania.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/SpiderMan2.png" class="card-img-top" alt="Spider-Man">
+                    <div class="card-body">
+                        <h5 class="card-title">Spider-Man</h5>
+                        <a href="assets/views/review-spider.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="assets/images/Blasphemous.png" class="card-img-top" alt="Blasphemous">
+                    <div class="card-body">
+                        <h5 class="card-title">Blasphemous</h5>
+                        <a href="assets/views/review-blasphemous.html" class="btn btn-primary">Leia a Review</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </article>
 
 
@@ -53,32 +166,36 @@
       <section id='popular-container'>
 
         <section>
-          <div class='popular-image' id='GTAV'> </div>
-          <p class='popular-title'>Rockstar Games Revela Trailer de GTA 6 com Ambientação Inspirada em Vice City e Los
-            Santos</p>
-          <p class='popular-subtitle'>Nova edição promete ser a maior de todas, com mapa expansivo e novas mecânicas de
-            jogabilidade..</p>
-          <div class='popular-button-container'> <button class='popular-button'> <a
-                href='assets/views/novidades-GTA.html'> LER MAIS </a></button> </div>
+          <div class="card" style="width: 18rem; height: 33rem;">
+            <img src="assets\images\GTAV.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rockstar Games Revela GTA 6 com Ambientação Inspirada em Vice City e Los Santos</h5>
+              <p class="card-text">Nova edição promete ser a maior de todas, com mapa expansivo e novas mecânicas de jogabilidade.</p>
+              <a href="assets/views/novidades-GTA.html" class="btn btn-primary" style="background-color: #A136FF; border: none;">Ler Mais</a>
+            </div>
+          </div>
         </section>
 
         <section>
-          <div class='popular-image' id='Overwatch'> </div>
-          <p class='popular-title'>Blizzard Anuncia Novo Evento de Temporada e Modo PvE Exclusivo para Overwatch 2</p>
-          <p class='popular-subtitle'>“Operação Aurora” trará missões cooperativas e recompensas especiais por tempo
-            limitado.</p> <br>
-          <div class='popular-button-container'> <button class='popular-button'> <a
-                href='assets/views/novidades-overwatch.html'>LER MAIS</a></button> </div>
+          <div class="card" style="width: 18rem; height: 33rem;">
+            <img src="assets\images\Overwatch.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blizzard Anuncia Novo Evento de Temporada e Modo PvE Exclusivo para Overwatch 2</h5>
+              <p class="card-text">“Operação Aurora” trará missões cooperativas e recompensas especiais por tempo limitado.</p>
+              <a href="assets/views/novidades-overwatch.html" class="btn btn-primary" style="background-color: #A136FF; border: none;">Ler Mais</a>
+            </div>
+          </div>
         </section>
 
         <section>
-          <div class='popular-image' id='Valorant'> </div>
-          <p class='popular-title'>Valorant Lança Modo de Jogo Inédito “Missão Tempestade” e Expande Lore com Novos
-            Mapas</p>
-          <p class='popular-subtitle'>Atualização traz missões cooperativas, narrativa expandida e novos mapas
-            ambientados em locais exóticos.</p>
-          <div class='popular-button-container'> <button class='popular-button'><a
-                href='assets/views/novidades-valorant.html'>LER MAIS</a></button> </div>
+          <div class="card" style="width: 18rem; height: 33rem;">
+            <img src="assets\images\Valorant.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Valorant Lança Modo de Jogo Inédito “Missão Tempestade”</h5>
+              <p class="card-text">Atualização traz missões cooperativas, narrativa expandida e novos mapas ambientados em locais exóticos.</p>
+              <a href="assets/views/novidades-valorant.html" class="btn btn-primary" style="background-color: #A136FF; border: none;">Ler Mais</a>
+            </div>
+          </div>
         </section>
 
       </section>
@@ -90,19 +207,37 @@
       <hr>
       <section id='popular-container'>
 
-        <section>
-          <div class='popular-image' id='sonic'> </div>
-          <p class='popular-title'>Sonic X Shadow Generations: trailer foca em Poderes Doom</p>
-          <p class='popular-subtitle'>Novos Poderes e Encontros Épicos no Trailer de Sonic X Shadow Generations.</p>
-        </section>
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner" style = "width: 30rem; margin: 0 auto;">
+            <div class="carousel-item active">
+              <img src="assets/images/Sonic-x-shadow.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style = 'color: black;'>Sonic X Shadow Generations: trailer foca em Poderes Doom</h5>
+                <p style = 'color: black;'>Novos Poderes e Encontros Épicos no Trailer de Sonic X Shadow Generations.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/images/Mortal-Kombat-X.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 style = 'color: white;'>Mortal Kombat 1: Reina o Kaos ganha trailer de Cyrax</h5>
+                <p style = 'color: white;'>Cyrax Rouba a Cena no Novo Trailer de Mortal Kombat 1: Reina o Kaos.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-        <section>
-          <div class='popular-image' id='mortal'> </div>
-          <p class='popular-title'>Mortal Kombat 1: Reina o Kaos ganha trailer de Cyrax</p>
-          <p class='popular-subtitle'>Cyrax Rouba a Cena no Novo Trailer de Mortal Kombat 1: Reina o Kaos.</p>
-        </section>
-
-      </section>
     </article>
 
     <article id='maps'>
@@ -114,26 +249,51 @@
           width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
-
     </article>
 
   </main>
 
   <!-- footer -->
   <footer>
-    <h1 id='footer-logo'>PIXELVIEWS</h1>
-    <p id='footer-text'>Este site publica opiniões próprias a respeito de videogames.</p> <br>
-    <span class='footer-icons'>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-x-twitter"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-threads"></i>
-      <i class="fa-brands fa-youtube"></i>
-    </span> <br>
+
+    <div class="container-fluid text-center" style="background-color: black; width: 100vw;">
+      <!-- Logo e Texto -->
+      <div class="row mb-3">
+        <div class="col">
+          <h1 id='footer-logo' style="color: white;">PIXELVIEWS</h1>
+          <p id='footer-text' style="color: white;">Este site publica opiniões próprias a respeito de videogames.</p>
+        </div>
+      </div>
+    
+      <!-- Ícones de Redes Sociais -->
+      <div class="row mb-3">
+        <div class="col">
+          <a href="#" style="color: white;"><i class="fa-brands fa-facebook-f fa-2x"></i></a>
+        </div>
+        <div class="col">
+          <a href="#" style="color: white;"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
+        </div>
+        <div class="col">
+          <a href="#" style="color: white;"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        </div>
+        <div class="col">
+          <a href="#" style="color: white;"><i class="fa-brands fa-threads fa-2x"></i></a>
+        </div>
+        <div class="col">
+          <a href="#" style="color: white;"><i class="fa-brands fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    
+      <!-- Linha de Copyright -->
+      <div class="row" style="background-color: #0c00a8; padding: 10px 0;">
+        <div class="col">
+          <p style="color: white; margin: 0;">©2024 IFPB</p>
+        </div>
+      </div>
+    </div>   
+
   </footer>
-  <section id='footer-section'>
-    <p>©2024 IFPB</p>
-  </section>
+
 </body>
 
 </html>
