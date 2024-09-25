@@ -63,11 +63,34 @@
     </nav>
 
     <style>
-      .card-img-top {
-          height: 500px; /* Define a altura desejada */
-          object-fit: cover; /* Faz a imagem se ajustar sem distorcer */
+      .card-img-top,.card-img-top .img {
+          height: 500px; 
+          object-fit: cover; 
+        }
+      
+      .card .img{
+        overflow: hidden;
       }
-  </style>
+       .card .img img {
+        transition: transform 500ms;
+        will-change: scale;
+      }
+ 
+      .card:hover .img img{
+        transform: scale(1.1);
+      }
+      #popular-container .card{
+        width: 400px;
+      }
+      #popular-container .card .img{
+        height: auto; 
+      }
+      #popular-container .card .img img{
+ width: 100%;       
+ aspect-ratio: 1;
+ object-fit: contain;
+      }
+    </style>
 
     <article>
       <div class="container mt-5">
@@ -75,7 +98,9 @@
         <div class="row mt-4">
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/RD2.png" class="card-img-top" alt="Red Game">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Red</h5>
                         <a href="assets/views/review-red.html" class="btn btn-primary">Leia a Review</a>
@@ -84,7 +109,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/EldenRing.png" class="card-img-top" alt="Elden Ring">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Elden Ring</h5>
                         <a href="assets/views/review-elden.html" class="btn btn-primary">Leia a Review</a>
@@ -93,7 +120,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/HollowKnight.png" class="card-img-top" alt="Hollow Knight">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Hollow Knight</h5>
                         <a href="assets/views/review-hollow.html" class="btn btn-primary">Leia a Review</a>
@@ -102,7 +131,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/Terraria.png" class="card-img-top" alt="Terraria">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Terraria</h5>
                         <a href="assets/views/review-terraria.html" class="btn btn-primary">Leia a Review</a>
@@ -111,7 +142,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/GTACINCO.png" class="card-img-top" alt="GTA">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">GTA</h5>
                         <a href="assets/views/review-GTA.html" class="btn btn-primary">Leia a Review</a>
@@ -120,7 +153,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/MetroidFusion.png" class="card-img-top" alt="Metroid">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Metroid</h5>
                         <a href="assets/views/review-metroid.html" class="btn btn-primary">Leia a Review</a>
@@ -129,7 +164,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/Castlevania.png" class="card-img-top" alt="Castlevania">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Castlevania</h5>
                         <a href="assets/views/review-castelvania.html" class="btn btn-primary">Leia a Review</a>
@@ -138,7 +175,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/SpiderMan2.png" class="card-img-top" alt="Spider-Man">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Spider-Man</h5>
                         <a href="assets/views/review-spider.html" class="btn btn-primary">Leia a Review</a>
@@ -147,7 +186,9 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
+                  <div class="img">
                     <img src="assets/images/Blasphemous.png" class="card-img-top" alt="Blasphemous">
+                  </div>
                     <div class="card-body">
                         <h5 class="card-title">Blasphemous</h5>
                         <a href="assets/views/review-blasphemous.html" class="btn btn-primary">Leia a Review</a>
@@ -158,16 +199,18 @@
     </div>
     </article>
 
-
-    <!-- notícias recentes  -->
     <article id='populares'>
       <h1>ÚLTIMAS NOTÍCIAS</h1>
       <hr>
       <section id='popular-container'>
 
         <section>
-          <div class="card" style="width: 18rem; height: 33rem;">
-            <img src="assets\images\GTAV.png" class="card-img-top" alt="...">
+          <div class="card" >
+            <div class="img">
+              <img src="assets\images\GTAV.png" alt="...">
+              
+
+            </div>
             <div class="card-body">
               <h5 class="card-title">Rockstar Games Revela GTA 6 com Ambientação Inspirada em Vice City e Los Santos</h5>
               <p class="card-text">Nova edição promete ser a maior de todas, com mapa expansivo e novas mecânicas de jogabilidade.</p>
@@ -177,8 +220,10 @@
         </section>
 
         <section>
-          <div class="card" style="width: 18rem; height: 33rem;">
-            <img src="assets\images\Overwatch.png" class="card-img-top" alt="...">
+          <div class="card" >
+            <div class="img">
+              <img src="assets\images\Overwatch.png" alt="...">
+            </div>
             <div class="card-body">
               <h5 class="card-title">Blizzard Anuncia Novo Evento de Temporada e Modo PvE Exclusivo para Overwatch 2</h5>
               <p class="card-text">“Operação Aurora” trará missões cooperativas e recompensas especiais por tempo limitado.</p>
@@ -188,8 +233,11 @@
         </section>
 
         <section>
-          <div class="card" style="width: 18rem; height: 33rem;">
-            <img src="assets\images\Valorant.png" class="card-img-top" alt="...">
+          <div class="card" >
+            <div class="img">
+              <img src="assets\images\Valorant.png" alt="...">
+
+            </div>
             <div class="card-body">
               <h5 class="card-title">Valorant Lança Modo de Jogo Inédito “Missão Tempestade”</h5>
               <p class="card-text">Atualização traz missões cooperativas, narrativa expandida e novos mapas ambientados em locais exóticos.</p>
